@@ -2,37 +2,1071 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  /* NAVBAR CSS  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .navbarContainer
+  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b121b;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .logoDiv
+  {
+    width: 100%;
+    padding: 1% 0%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logoLink
+  {
+    width: 11%;
   }
+
+  .logoDiv img 
+  {
+    width: 100%;
+  }
+
+  .addressNavDiv
+  {
+    padding: 1% 0%;
+    text-align: start;
+    width: 16%;
+  }
+
+  .addressNavDiv #p1
+  {
+    margin: 0%;
+    color: white;
+    font-size: 1.3vw;
+    padding-left: 12%;
+  }
+
+  .addressNavDiv #p2
+  {
+    margin: 0%;
+    color: white;
+    font-size: 1.4vw;
+  }
+
+  .searchDiv
+  {
+    padding: 1% 1%;
+    display: flex;
+    width: 40%;
+  }
+
+  .searchDiv input
+  {
+    font-size: 1.5vw;
+    height: 4.5vw;
+    width: 100%;
+  }
+
+  .searchDiv button 
+  {
+    font-size: 1.5vw;
+    height: 4.5vw;
+    font-weight: lighter;
+    background-color: #febd69;
+    border: 0px;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .flagDiv
+  {
+    width: 5%;
+    margin: 1.5% 0%;
+    color: gainsboro;
+  }
+
+  .flagDiv img
+  {
+    width: 70%;
+  }
+
+  .flagDiv i 
+  {
+    padding-left: 5%;
+  }
+
+  .signInDiv
+  {
+    color: white;
+    padding: 1%;
+    text-align: start;
+    font-size: 1.3vw
+  }
+
+  .returnsDiv
+  {
+    color: white;
+    padding: 1%;
+    text-align: start;
+    font-size: 1.3vw;
+  }
+
+  .cartIconDiv
+  {
+    color: white;
+    padding: 1%;
+    font-size: 3vw;
+    position: relative;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .cartIconBadge
+  {
+    position: absolute;
+    font-size: 1.3vw;
+    width: 50%;
+    background-color: red;
+    color: white;
+    top: 5%;
+    right: -20%;
+    border-radius: 50%;
+    margin: 0%;
+  }
+
+  .cartBtnLink
+  {
+    text-decoration: none;
+    display: table;
+    padding: 0% 1%;
+  }
+
+
+
+
+  /* SUBNAVBAR CSS  */
+
+  .subNavContainer
+  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232f3e;
+    color: white;
+  }
+
+  .mainSubnav
+  {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    width: 55%;
+    padding: 0.7% 0%;
+  }
+
+  .mainSubnav p 
+  {
+    margin: 0% 1%;
+  }
+
+  .subnavImageDiv
+  {
+    width: 45%;
+  }
+
+  .subnavImageDiv img
+  {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  /* CATEGORIES CONTAINER CSS  */
+
+  .categoriesContainer
+  {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categoryContainer
+  {
+    width: 30%;
+    margin: auto;
+    padding: 2% 2%;
+    background-color: white;
+    margin-top: -3%;
+    z-index: 9;
+  }
+
+  .categoryHeading
+  {
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: start;
+  }
+
+  .categoryImage
+  {
+    width: 96%;
+    margin: auto;
+  }
+
+
+
+
+
+
+
+  
+  /* CATALOGUE CONTAINER CSS */
+
+  .catalogueContainer
+  {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .productDiv
+  {
+    width: 20%;
+    margin: 2% 2.5%;
+  }
+
+  .productImage
+  {
+    width: 100%;
+    margin: auto;
+    height: 15vw;
+  }
+
+
+  .productHeader
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+  }
+
+  .productTitle
+  {
+    font-size: 1.6vw;
+    font-size: bolder;
+    color: #007185;
+  }
+
+  .productRating
+  {
+    font-size: 1.5vw;
+    margin: 0% 0%;
+  }
+
+  .productFooter
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+  }
+
+  .productPrice
+  {
+    font-size: 1.8vw;
+    font-weight: bolder;
+    margin: 0%;
+  }
+
+  .productCartBtn
+  {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin: 0%;
+    border: none;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 70%;
+  }
+
+  .addToCartAlt
+  {
+    font-size: 1.8vw;
+    font-weight: bolder;
+    margin: 0%;
+    border: none;
+    background-color: orangered;
+    color: white;
+    border-radius: 4px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .homeQuantDisplay
+  {
+    margin: 0%;
+    padding: 0% 5%;
+  }
+
+  .homeQuantBtn
+  {
+    margin: 0%;
+    padding: 0% 5%;
+    font-size: 1.8vw;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CART PAGE CSS  */
+
+  .cartMainContainer
+  {
+    width: 100%;
+    background-color: #eaeded;
+  }
+
+  .cartFlexContainer
+  {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .cartFlexOneContainer
+  {
+    width: 68%;
+    margin: 2% 1%;
+    background-color: white;
+    padding: 1% 2%;
+  }
+
+
+  .cartFlexOneHeading
+  {
+    font-size: 3vw;
+    text-align: start;
+    margin: 0%;
+    
+  }
+
+  hr
+  {
+    margin: 1% 0%;
+  }
+
+  .allCartProductsDiv
+  {
+    width: 100%;
+  }
+
+  .eachCartProductDiv
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+  }
+
+  .cartProductImage
+  {
+    width: 30%;
+    height: 20vw;
+  }
+
+  .cartProductDetailsDiv
+  {
+    width: 70%;
+    text-align: start;
+    padding: 2% 2%;
+  }
+
+  .cartProductNameFlex
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cartProductName
+  {
+    font-size: 2vw;
+    margin: 0%;
+    font-weight: bold;
+  }
+
+  .cartProductPrice
+  {
+    font-size: 2.5vw;
+    margin: 0%;
+    font-weight: bolder;
+  }
+
+  .cartProductStock
+  {
+    font-size: 1.3vw;
+    color: green;
+    margin: 0%;
+  }
+
+  .cartProductEligible
+  {
+    font-size: 1.3vw;
+    margin: 0%;
+    opacity: 75%;
+  }
+
+  .tagImage
+  {
+    width: 15%;
+  }
+
+  .cartProductGift
+  {
+    font-size: 1.3vw;
+    margin: 0%;
+  }
+
+  .giftCheck
+  {
+    margin: 0% 1%;
+  }
+
+  .quantityFlex
+  {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+  }
+
+  .quantityDiv
+  {
+    width: 70%;
+    text-align: center;
+    margin: 2% 0%;
+    font-size: 1.4vw;
+    padding: 1% 2%;
+    border-radius: 12px;
+    background-color: #eaeded;
+    display: flex;
+  }
+
+  .quantityDiv button
+  {
+    width: 20%;
+    border: none;
+  }
+
+  .quantityDiv input
+  {
+    width: 50%;
+    margin: auto;
+    height: 2vw;
+  }
+
+  .cartDeleteBtn
+  {
+    width: 30%;
+    font-size: 1.3vw;
+    margin: 0%;
+    padding: 5% 0%;
+    text-align: center;
+    color: #007185;
+    cursor: pointer;
+  }
+
+
+  .bottomTotalDiv
+  {
+    font-size: 1.8vw;
+    text-align: end;
+  }
+
+
+
+
+  .cartFlexTwoContainer
+  {
+    width: 28%;
+    margin: 2% 1%;
+    background-color: white;
+    padding: 2% 2%;
+    height: min-content;
+  }
+
+  .orderSummaryHeader
+  {
+    font-size: 1.3vw;
+    color: green;
+    text-align: start;
+    margin: 0%;
+  }
+
+  .subtotalSummary
+  {
+    font-size: 1.9vw;
+    text-align: start;
+    margin: 5% 0%;
+  }
+
+  .buyBtn
+  {
+    width: 100%;
+    border: none;
+    background-color: #ffd814;
+    border-radius: 6px;
+    font-size: 1.4vw;
+    padding: 2% 0%;
+  }
+
+  .summaryGift
+  {
+    font-size: 1.4vw;
+    text-align: start;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CONFIRMATION PAGE CSS  */
+
+  .confirmHeading
+  {
+    font-size: 3vw;
+  }
+
+  .confirmSubheading
+  {
+    font-size: 2vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* REGISTER PAGE CSS  */
+
+  .registerContainer
+  {
+    width: 40%;
+    margin: auto;
+  }
+
+  .registerLogo
+  {
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .registerForm
+  {
+    width: 100%;
+    padding: 2% 5%;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 4px;
+  }
+
+  .registerFormHeading
+  {
+    font-size: 3vw;
+    text-align: start;
+  }
+
+  .inputLabel
+  {
+    font-size: 1.4vw;
+    font-weight: bolder;
+    text-align: start;
+    margin: 0%;
+  }
+
+  .nameInput
+  {
+    width: 100%;
+    font-size: 1.4vw;
+    height: 3vw;
+  }
+
+  .emailInput
+  {
+    width: 100%;
+    font-size: 1.4vw;
+    height: 3vw;
+  }
+
+  .passwordInput
+  {
+    width: 100%;
+    font-size: 1.4vw;
+    height: 3vw;
+  }
+
+  .passwordMsg
+  {
+    font-size: 1.2vw;
+    opacity: 75%;
+    text-align: start;
+  }
+
+  .formMsg
+  {
+    font-size: 1.3vw;
+    text-align: start;
+    margin: 0% 0%;
+  }
+
+  .numberInputDiv
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #countrySelect
+  {
+    width: 28%;
+    margin: 0% 1%;
+    background-color: #eaeded;
+    height: 3vw;
+    border-radius: 3px;
+  }
+
+  .numberInput
+  {
+    width: 68%;
+    margin: 0% 1%;
+    height: 3vw;
+  }
+
+  .inputContainer
+  {
+    margin: 5% 0%;
+  }
+
+  .registerSubmitBtn
+  {
+    margin: 3% 0%;
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 2% 0%;
+    border: none;
+    border-radius: 3px;
+    background-color: #f0c351;
+    border: 1px solid #c6971e ;
+  }
+
+  .loginOption
+  {
+    text-align: start;
+    font-size: 1.3vw;
+    margin: 0% 0%;
+  }
+
+  .loginOptionLink
+  {
+    color: #007185;
+  }
+
+  #errorDisplay
+  {
+    font-size: 1.4vw;
+    margin: 2% 0%;
+    color: red;
+    font-weight: bolder;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* LOGIN PAGE CSS  */
+
+  .loginPageContainer
+  {
+    width: 40%;
+    margin: auto;
+  }
+
+  .loginForm
+  {
+    width: 100%;
+    padding: 2% 5%;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 4px;
+  }
+
+  .loginFormHeading
+  {
+    font-size: 3vw;
+    text-align: start;
+  }
+
+  .loginInputContainer
+  {
+    margin: 5% 0%;
+  }
+
+  .loginInputLabel
+  {
+    font-size: 1.4vw;
+    font-weight: bolder;
+    text-align: start;
+    margin: 0%;
+  }
+
+  .loginPhoneInput
+  {
+    width: 100%;
+    font-size: 1.4vw;
+    height: 3vw;
+  }
+
+  .loginPasswordInput
+  {
+    width: 100%;
+    font-size: 1.4vw;
+    height: 3vw;
+  }
+
+  .loginSubmitBtn
+  {
+    margin: 3% 0%;
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 2% 0%;
+    border: none;
+    border-radius: 3px;
+    background-color: #f0c351;
+    border: 1px solid #c6971e ;
+  }
+
+  .loginTerms
+  {
+    font-size: 1.3vw;
+    text-align: start;
+    margin: 0%;
+  }
+
+  .loginHelp
+  {
+    font-size: 1.2vw;
+    text-align: start;
+    margin: 5% 0%;
+  }
+
+  .loginRegisterDiv
+  {
+    width: 100%;
+  }
+
+  .askRegister
+  {
+    text-align: center;
+    font-size: 1.2vw;
+    opacity: 75%;
+    margin: 5% 0%;
+  }
+
+  .loginRegisterBtn
+  {
+    margin: 3% 0%;
+    width: 100%;
+    font-size: 1.3vw;
+    padding: 2% 0%;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #232f3e;
+  }
+
+  #loginErrorDisplay
+  {
+    font-size: 1.4vw;
+    margin: 2% 0%;
+    color: red;
+    font-weight: bolder;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+  .addressNavDiv
+  {
+    padding: 1% 0%;
+    text-align: start;
+    width: 20%;
+  }
+  
+  .addressNavDiv #p1
+  {
+    margin: 0%;
+    color: white;
+    font-size: 2vw;
+    padding-left: 12%;
+  }
+  
+  .addressNavDiv #p2
+  {
+    margin: 0%;
+    color: white;
+    font-size: 1.7vw;
+  }
+
+  .searchDiv
+  {
+    padding: 1% 1%;
+    display: flex;
+    width: 30%;
+  }
+
+  .searchDiv input
+  {
+    font-size: 1.5vw;
+    height: 6vw;
+    width: 100%;
+  }
+
+  .searchDiv button 
+  {
+    font-size: 1.5vw;
+    height: 6vw;
+    font-weight: lighter;
+    background-color: #febd69;
+    border: 0px;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .signInDiv
+  {
+    color: white;
+    padding: 1%;
+    text-align: start;
+    font-size: 2vw;
+  }
+
+  .returnsDiv
+  {
+    color: white;
+    padding: 1%;
+    text-align: start;
+    font-size: 1.9vw;
+  }
+
+  .cartIconDiv
+  {
+    color: white;
+    padding: 2% 1% 1% 1%;
+    font-size: 3vw;
+    position: relative;
+  }
+
+  .cartIconBadge
+  {
+    position: absolute;
+    font-size: 1.5vw;
+    width: 40%;
+    background-color: red;
+    color: white;
+    top: 10%;
+    right: 5%;
+  }
+
+  .mainSubnav p 
+  {
+    font-size: 2vw;
+  }
+
+  .mainSubnav
+  {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    width: 65%;
+    padding: 0.7% 0%;
+  }
+
+  .subnavImageDiv
+  {
+    width: 35%;
+  }
+
+  .subnavImageDiv img
+  {
+    width: 100%;
+  }
+
+
+
 }
+
+
+@media screen and (max-width: 400px) {
+
+  .addressNavDiv
+  {
+    padding: 1.5% 0% 1% 0%;
+    text-align: start;
+    width: 20%;
+  }
+  
+  .addressNavDiv #p1
+  {
+    margin: 0%;
+    color: white;
+    font-size: 2.6vw;
+    padding-left: 12%;
+  }
+  
+  .addressNavDiv #p2
+  {
+    margin: 0%;
+    color: white;
+    font-size: 1.7vw;
+  }
+
+  .searchDiv
+  {
+    padding: 1% 1%;
+    display: flex;
+    width: 30%;
+  }
+
+  .searchDiv input
+  {
+    font-size: 1.5vw;
+    height: 7vw;
+    width: 100%;
+  }
+
+  .searchDiv button 
+  {
+    font-size: 1.5vw;
+    height: 7vw;
+    font-weight: lighter;
+    background-color: #febd69;
+    border: 0px;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .signInDiv
+  {
+    color: white;
+    padding: 2% 1% 1% 1%;
+    text-align: start;
+    font-size: 2vw;
+  }
+
+  .returnsDiv
+  {
+    color: white;
+    padding: 2% 1% 1% 1%;
+    text-align: start;
+    font-size: 1.9vw;
+  }
+
+  .cartIconDiv
+  {
+    color: white;
+    padding: 2% 1% 1% 1%;
+    font-size: 3vw;
+    position: relative;
+  }
+
+
+
+  .mainSubnav p 
+  {
+    font-size: 2.2vw;
+  }
+
+  .mainSubnav
+  {
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 3vw; */
+    width: 70%;
+    padding: 1.5% 0% 0.7% 0%;
+  }
+
+  .subnavImageDiv
+  {
+    width: 30%;
+  }
+
+  .subnavImageDiv img
+  {
+    width: 100%;
+  }
+
+
+}
+
